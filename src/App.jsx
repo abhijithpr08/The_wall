@@ -7,6 +7,8 @@ import UltraChroma from './components/UltraChroma'
 import AiUpscaling from './components/AiUpscaling'
 import QuantumHdr from './components/QuantumHdr'
 import Download from './components/ui/Download'
+import FeaturedContent from './components/FeaturedContent'
+import { featuredContentData } from './data/contentData'
 
 const App = () => {
   const heroRef = useRef(null)
@@ -50,9 +52,10 @@ const App = () => {
       <UltraChroma/>
       <AiUpscaling/>
       <QuantumHdr/>
-      <div className="flex justify-center py-8">
+      <FeaturedContent items={featuredContentData} />
+      {/* <div className="flex justify-center py-8">
         <Download color="white" variant="outline" />
-      </div>
+      </div> */}
     </div>
   )
 }
