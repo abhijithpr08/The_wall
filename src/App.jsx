@@ -9,6 +9,7 @@ import QuantumHdr from './components/QuantumHdr'
 import Download from './components/ui/Download'
 import ShopTheWallProducts from './components/ShopTheWallProducts'
 import { shopProducts } from './data/shopProducts'
+import ExploreStatic from './components/ExploreStatic'
 import FeaturedContent from './components/FeaturedContent'
 import { featuredContentData } from './data/contentData'
 
@@ -56,6 +57,7 @@ const App = () => {
       <QuantumHdr/>
       <FeaturedContent items={featuredContentData} />
       <ShopTheWallProducts products={shopProducts} />
+      <ExploreStatic />
 
       {/* <div className="flex justify-center py-8">
         <Download color="white" variant="outline" />
