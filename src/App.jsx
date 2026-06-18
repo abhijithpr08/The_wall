@@ -10,8 +10,12 @@ import Download from './components/ui/Download'
 import ShopTheWallProducts from './components/ShopTheWallProducts'
 import { shopProducts } from './data/shopProducts'
 import ExploreStatic from './components/ExploreStatic'
+import GreatnessSection from './components/GreatnessSection'
+import ResaleSection from './components/ResaleSection'
+import ContactSection from './components/ContactSection'
 import FeaturedContent from './components/FeaturedContent'
 import { featuredContentData } from './data/contentData'
+import Footer from './components/Footer'
 
 const App = () => {
   const heroRef = useRef(null)
@@ -58,6 +62,10 @@ const App = () => {
       <FeaturedContent items={featuredContentData} />
       <ShopTheWallProducts products={shopProducts} />
       <ExploreStatic />
+      <ResaleSection />
+      <GreatnessSection />
+      <ContactSection />
+      <Footer/>
 
       {/* <div className="flex justify-center py-8">
         <Download color="white" variant="outline" />

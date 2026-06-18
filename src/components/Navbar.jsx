@@ -17,7 +17,7 @@ const Navbar = ({ top = 40, blur = false }) => {
         className={`fixed inset-x-0 z-50 transition-all duration-200 ease-out ${blur ? 'bg-white/70 backdrop-blur-xl shadow-xl shadow-slate-950/20' : 'bg-white'} px-4 md:px-8 lg:px-16`}
         style={{ top: `${top}px` }}
       >
-        <div className="mx-auto flex h-18 max-w-[1600px] items-center justify-between gap-4 b px-4 md:px-6 lg:px-0">
+        <div className="mx-auto flex h-18 items-center justify-between gap-4 b px-4 md:px-6 lg:px-0">
           <Logo className="text-base md:text-lg lg:text-xl" />
 
           <div className="hidden md:flex items-center gap-8 text-lg">
@@ -45,8 +45,8 @@ const Navbar = ({ top = 40, blur = false }) => {
           </button>
         </div>
 
-        <div className={`md:hidden fixed inset-0 z-40 flex flex-col items-center justify-center bg-white/95 backdrop-blur-sm transition-transform duration-400 ease-out ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
-          <div className="flex w-full max-w-md flex-col items-center gap-6 px-6">
+        <div className={`md:hidden fixed inset-0 z-60 flex flex-col items-center justify-center bg-white/95 backdrop-blur-sm transition-transform duration-400 ease-out ${menuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}>
+          <div className="flex max-w-md flex-col items-center gap-6 px-6">
             <a href="#about" className="w-full rounded-3xl bg-white/0 px-6 py-4 text-center text-2xl font-medium text-slate-900 transition hover:bg-slate-100">About</a>
             <a href="#features" className="w-full rounded-3xl bg-white/0 px-6 py-4 text-center text-2xl font-medium text-slate-900 transition hover:bg-slate-100">Features</a>
             <a href="#applications" className="w-full rounded-3xl bg-white/0 px-6 py-4 text-center text-2xl font-medium text-slate-900 transition hover:bg-slate-100">Applications</a>
