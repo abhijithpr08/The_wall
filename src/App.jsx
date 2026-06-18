@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import FrameImg from './assets/38_frame_17.png'
+import BlackSeal from './components/BlackSeal'
+import UltraChroma from './components/UltraChroma'
+import AiUpscaling from './components/AiUpscaling'
+import QuantumHdr from './components/QuantumHdr'
+import Download from './components/ui/Download'
 
 const App = () => {
   const heroRef = useRef(null)
@@ -36,9 +42,17 @@ const App = () => {
   }, [])
 
   return (
-    <div className='bg-slate-950'>
+    <div className='bg-black'>
       <Navbar top={navTop} blur={navBlur} />
       <Hero ref={heroRef} />
+      <img src={FrameImg} alt="Decoration" className='w-full'/>
+      <BlackSeal/>
+      <UltraChroma/>
+      <AiUpscaling/>
+      <QuantumHdr/>
+      <div className="flex justify-center py-8">
+        <Download color="white" variant="outline" />
+      </div>
     </div>
   )
 }
